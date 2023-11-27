@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player App</title>
+    <link rel="stylesheet" href="Music Player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+            <div class="circle">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <img src="image.png" class="song-img">
+        <h1>Neethona</h1>
+        <p>Shanmuk Jaswanth</p>
+        <audio  id="song">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+            <div onclick="backWard()"><i class="fas fa-backward" id="backwardbutton"></i></div>
+            <div onclick="playPause()"><i class="fas fa-play" id="ctrl-icon"></i></div>
+            <div onclick="forWard()"><i class="fas fa-forward" id="forwardbutton"></i></div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="Music Player.js"></script>
+</body>
+</html>
